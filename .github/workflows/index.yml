@@ -12,6 +12,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '21.x'
+      - run: npm i
       - run: npm test
   security:
     runs-on: ubuntu-latest
